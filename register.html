@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" >
+        <div class="row justify-content-center text-light">
+            <div class="col-md-6">
+               
+                
+                <h2 class="text-center mt-5 text-danger"  >Register</h2>
+                <form onsubmit="return validatePasswords()">
+                    <div class="form-group">
+                        <label for="username">Name:</label>
+                        <input type="text" class="form-control " id="username" placeholder="Enter username" required pattern="[A-Za-z ]+">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <span id="message" style="color: red;"></span>
+                    <button type="submit" class="btn btn-primary btn-block  ">Register</button>
+                </form>
+                <div class="text-center mt-3">
+                   <small >Already have an account?</small> <a href="login.html" > Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
